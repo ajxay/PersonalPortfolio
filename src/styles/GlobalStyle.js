@@ -269,6 +269,24 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  del {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: var(--transition);
+
+    &:hover,
+    &:focus {
+      color: var(--green);
+    }
+
+    &.inline-link {
+      ${({ theme }) => theme.mixins.inlineLink};
+    }
+  }
+
   button {
     cursor: pointer;
     border: 0;

@@ -189,7 +189,7 @@ const Jobs = () => {
 
   const jobsData = data.jobs.edges;
 
-  const [activeTabId, setActiveTabId] = useState(0);
+  const [activeTabId, setActiveTabId] = useState(1);
   const [tabFocus, setTabFocus] = useState(null);
   const tabs = useRef([]);
   const revealContainer = useRef(null);
